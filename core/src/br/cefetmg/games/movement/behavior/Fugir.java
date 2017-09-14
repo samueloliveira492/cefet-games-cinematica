@@ -16,6 +16,7 @@ public class Fugir extends AlgoritmoMovimentacao {
 
     public Fugir(float maxVelocidade) {
         super(NOME);
+        this.maxVelocidade = maxVelocidade;
     }
 
     @Override
