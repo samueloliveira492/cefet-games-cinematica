@@ -28,7 +28,8 @@ public class Vagar extends AlgoritmoMovimentacao {
     @Override
     public Direcionamento guiar(Pose agente) {
         Direcionamento output = new Direcionamento();
-
+        output.velocidade = agente.getOrientacaoComoVetor().scl(this.maxVelocidade); 
+        output.rotacao = (Math.random()-Math.random())*this.maxAngular;
         // calcula que direção tomar (configura um objeto Direcionamento 
         // e o retorna)
         // ...
